@@ -1,0 +1,52 @@
+Discrete_Element_Method_Input
+ElapsedTime:           0.000e-000
+Iterations.Current:             0
+TimeStep:              2.000e-006
+Iterations.Total:          4000000
+Output.Frequency:            1000
+Output.Count:                   0
+Particle.Number:           200000
+Particle.Diameter:     7.0e-4
+Particle.Density:      2.5e+003
+Particle.Spring:             1.000e+001
+Particle.Restitution:        9.000e-001
+PartWall.Restitution:        9.000e-001
+Particle.Friction:           3.000e-001
+PartWall.Friction:           3.000e-001
+Particle.rotfriction:                 0
+Particle.Hamaker:            0.000e+000
+PartWall.Hamaker:            0.000e+000
+Particle.Hamaker.Dist.Min:   4.000e-010
+PartWall.Hamaker.Dist.Min:   4.000e-010
+Particle.Hamaker.Dist.Max:   1.500e-008
+PartWall.Hamaker.Dist.Max:   1.500e-008
+Particle.CoarseRatio:        1.000e+000
+
+particle.min_diameter=7.0e-4
+
+
+randpack.initial_shrink = 1
+randpack.growth_rate = 1
+
+particletype0.density=1500
+particletype1.density=3000
+
+;; initialization with block particle generator
+init.block_num = 2
+;;
+init.block0.min = 205e-3, 135e-3, 29e-3
+init.block0.max = 224e-3, 300e-3, 49e-3
+init.block0.particle_type = 0
+init.block0.particle_num = 1000
+init.block0.particle_diameter = 7.0e-4
+init.block0.particle_coarseratio=1
+
+;;
+init.block1.min = 205e-3, 135e-3, 29e-3
+init.block1.max = 224e-3, 300e-3, 49e-3
+init.block1.particle_type = 1
+init.block1.particle_num = 1000
+init.block1.particle_diameter = 7.0e-4
+init.block1.particle_coarseratio=1
+
+DEM_particles:

@@ -1,0 +1,87 @@
+Computational_Fluid_Dynamics_Input
+Density:   1.0000e+000
+Viscoity:  1.8000e-005
+ElapsedTime: 0.0000e+000
+
+cfd.courant:	0.2
+cfd.itelimit:	10
+cfd.inv_sound_v:	1.0e-4
+
+demcfd.use_implicit_drag = 1
+
+;1 :	 wall
+;2 :	 inlet
+;3 :	 outlet
+
+numBoundaries:	8
+
+Grid:	125, 259, 40
+
+;Xminus
+boundary0.type:	1
+boundary0.min:	0, 0, 0
+boundary0.max:	0, 260, 41
+
+;Xplus
+boundary1.type:	1
+boundary1.min:	126, 0, 0
+boundary1.max:	126, 260, 41
+
+;Zminus
+boundary2.type:	1
+boundary2.min:	0, 0, 0
+boundary2.max:	126, 260, 0
+
+;Zplus
+boundary3.type:	1
+boundary3.min:	0, 0, 41
+boundary3.max:	126, 260, 41
+
+;Yplus
+boundary4.type:	3
+boundary4.min:	0, 260, 0
+boundary4.max:	126, 260, 41
+
+;Yminus
+boundary5.type:	1
+boundary5.min:	0, 0, 0
+boundary5.max:	126, 0, 41
+
+
+;left part Yminus
+boundary6.type:	2
+boundary6.min:	0, 0, 0
+boundary6.max:	40, 0, 41
+boundary6.vel:  0.0, 0.65, 0.0
+; boundary6.vel:  0.0, 0.0, 0.0
+
+;right part Yminus
+boundary7.type:	2
+boundary7.min:	85,  0, 15
+boundary7.max:	113, 0, 25
+boundary7.vel:  0.0, 0.0149, 0.0
+
+
+velocity.YPLUS:		0.0000e+000,  0.0000e+000,  0.0000e+000
+velocity.YMINUS:	0.0000e+000,  0.0000e+000,  0.0000e+000
+velocity.XPLUS:		0.0000e+000,  0.0000e+000,  0.0000e+000
+velocity.XMINUS:	0.0000e+000,  0.0000e+000,  0.0000e+000
+velocity.ZPLUS:		0.0000e+000,  0.0000e+000,  0.0000e+000
+velocity.ZMINUS:	0.0000e+000,  0.0000e+000,  0.0000e+000
+
+ibm.dens_scale = 1000.0
+
+;;
+porosity.cutoff = 0.1
+;;
+porosity.zone0.active = 0
+;;
+porosity.zone1.active = 1
+porosity.zone1.porosity = 0.107978
+porosity.zone1.model = ergun
+porosity.zone1.dp_eff = 2.11e-03
+
+
+
+
+GridData:
