@@ -1,0 +1,28 @@
+Discrete_Element_Method_Input
+ElapsedTime:           		 0.000e-000
+Iterations.Current:          	      0
+TimeStep:              		 2.000e-006
+Iterations.Total:          	    120000
+Output.Frequency:            	   1000
+Output.Count:                         0
+Particle.Number:           		 500000
+Particle.Diameter:               2.5e-4
+Particle.Density:     		   1.500e+003
+Particle.Spring:             5.000e+001
+Particle.Restitution:        9.000e-001
+PartWall.Restitution:        9.000e-001
+Particle.Friction:           3.000e-001
+PartWall.Friction:           3.000e-001
+Particle.rotfriction:                 0
+Particle.Hamaker:            0.000e+000
+PartWall.Hamaker:            0.000e+000
+Particle.Hamaker.Dist.Min:   4.000e-010
+PartWall.Hamaker.Dist.Min:   4.000e-010
+Particle.Hamaker.Dist.Max:   1.500e-008
+PartWall.Hamaker.Dist.Max:   1.500e-008
+Particle.CoarseRatio:        1.000e+000
+
+init.max = 0, 40.0e-003, 20e-003
+init.min = -20e-003, 0, -20e-003
+
+DEM_particles:
